@@ -342,8 +342,8 @@ Let's take a look at an example that would work fine in JavaScript but cause an 
 
 In JavaScript, dividing or multiplying a number and a string that can be interpreted as a number is allowed. However, TypeScript will flag these operations as errors because ```t``` is a string, not a number:
 
-> [!Error]
-> The right-hand side of an arithmetic operation must be of type ```'any'```, ```'number'```, ```'bigint'```, or an ```enum``` type.
+> [!WARNING]
+> Error: The right-hand side of an arithmetic operation must be of type ```'any'```, ```'number'```, ```'bigint'```, or an ```enum``` type.
 
 You can either fix this by explicitly changing ```t```from ```"6"``` to ```6```, or by casting it to a number, like so:
 
