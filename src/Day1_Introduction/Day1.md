@@ -4,29 +4,35 @@
   <h1>30 Days of Basics TypeScript: Introduction </h1>
 </div>
 
+<div align="center"> 
+
 <!-- Social links -->
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](htttps://discord.gg/Samson#0273) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://www.facebook.com/chiemezie.nebeolisa/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/samson_nebeolisa/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chiemezie-samson-nebeolisa-32897310b/) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/20653301/nebeolisa-chiemezie-samson) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/SamsonChiemezie) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://myaccount.google.com/u/0/?utm_source=YouTubeWeb&tab=rk&utm_medium=act&tab=rk&hl=en) 
 
 <!-- Portfolio -->
-* 📰 About Me [Portfolio](https://www.nebe-samson.com/)
-
-<div align="center"> 
+ 📰 About Me [Portfolio](https://www.nebe-samson.com/)
+ <br/>
   <small>Sep, 2024</small>
 </div>
 
 
 [Day 2 >>](../Day2_Types/Day2.md)
 
-![Thirty Days Of Basics TypeScript](../Asset/images/TypeScript.jpeg)
+
+<div align="center"> 
+  <a class="header-image" target="_blank" href="../Asset/images/TypeScript.jpeg">
+    <img alt="Typescript image" src="../Asset/images/TypeScript.jpeg" width="100%">
+  </a>
+</div>
 
 ## Table of Contents
 
-- [30 Days of Basics TypeScript](#30-days-of-typescript)
+- [30 Days of Basics TypeScript](#30-days-of-basics-typescript)
 - [Introduction](#introduction)
   - [Key Features of TypeScript](#key-features-of-typescript)
   - [Prerequisites](#prerequisites)
 - [Installing TypeScript](#installing-typescript)
-  - [Install Node.js](#install-node.js)
+  - [Install Node.js](#install-node)
   - [Installing Visual Studio Code](#installing-visual-studio-code)
   - [Getting Started with Visual Studio Code](#getting-started-with-visual-studio-code)
   - [Setting Up TypeScript in Your Project](#setting-up-typescript-in-your-project)
@@ -88,7 +94,7 @@ TypeScript works on all major operating systems, so whether you’re using Windo
 
 For this course, we'll be installing TypeScript on your local machine using ```Node.js``` and ```npm (Node Package Manager)```. Here’s how to do it step-by-step:
 
-### Install Node.js 
+### Install Node
 
 TypeScript requires ```Node.js``` to be installed. You can download ```Node.js``` from [nodejs.org](https://nodejs.org/en/).
 
