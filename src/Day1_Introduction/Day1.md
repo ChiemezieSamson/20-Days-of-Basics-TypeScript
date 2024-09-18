@@ -19,7 +19,7 @@
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/day_1.webp">
-    <img alt="Typescript image" src="../Asset/images/Days/day_1.webp" width="100%" style="max-height: 400px">
+    <img alt="Typescript image" src="../Asset/images/Days/day_1.webp" width="100%" height="600px">
   </a>
 </div>
 
@@ -104,12 +104,12 @@ After downloading double click and install
 
 To check if ```Node.js``` is installed on your computer, you can use your terminal or command prompt. Simply run the following command:
 
-```terminal 
+```s 
   node -v 
 ```
 You might see an output like this:
 
-```terminal 
+```s 
   v20.16.0 
 ```
 
@@ -160,11 +160,11 @@ Once you’ve confirmed that Node.js is installed on your device, it’s time to
   4. Initialize Your Project with npm:
     To set up your project for managing dependencies, run the following command in the terminal:
 
-    ```terminal
-     npm init -y 
-    ```
+  ```s
+   npm init -y 
+  ```
 
-    This will create a ```package.json``` file in your folder, which is where you’ll store all your project’s dependencies and scripts.
+  This will create a ```package.json``` file in your folder, which is where you’ll store all your project’s dependencies and scripts.
 
 ### Installing TypeScript
 
@@ -173,21 +173,21 @@ Now that the project is set up, let’s install TypeScript. There are different 
   1. Installing TypeScript Locally (Project-Level):
     Installing TypeScript locally means that it will only be available for this specific project. This is a good idea because different projects may need different versions of TypeScript. To install it locally, run:
 
-    ```terminal 
-      npm install typescript --save-dev
-    ```
-    This command installs TypeScript as a "dev dependency", which means it’s only needed during development and won’t be part of the final application when it runs.
+  ```s
+    npm install typescript --save-dev
+  ```
+  This command installs TypeScript as a "dev dependency", which means it’s only needed during development and won’t be part of the final application when it runs.
 
   2. Installing TypeScript Globally (Machine-Level):
     If you plan to work on multiple TypeScript projects and don’t want to install it each time, you can install TypeScript globally on your machine. This makes it available for any project. To install globally, run:
 
-    ```terminal 
-      npm install -g typescript
-    ```
+  ```s
+    npm install -g typescript
+  ```
 
 After installation, make sure TypeScript is installed by running the following command:
 
-```terminal
+```sh
   tsc --version or tsc -v
 ```
 
@@ -209,18 +209,18 @@ To use TypeScript properly, you need a configuration file (```tsconfig.json```) 
 
   1. Create the Config File: To generate a basic ```tsconfig.json``` file, run this command:
 
-   ```terminal 
+   ```sh 
     npx tsc --init
    ```
   This will create a default ```tsconfig.json``` file in your project folder. The file contains several configuration options (many are commented out). You can edit this file to customize how TypeScript behaves in your project.
 
-  ** What’s in ```tsconfig.json?``` **
+  **What’s in ```tsconfig.json?```**
 
-    The ```tsconfig.json``` file is quite detailed, but don’t be intimidated. It allows you to control important things like:
+  The ```tsconfig.json``` file is quite detailed, but don’t be intimidated. It allows you to control important things like:
 
-    - Which files TypeScript should compile.
-    - How strict the type-checking should be.
-    - How the compiled JavaScript should look (ES5, ES6, etc.).
+  - Which files TypeScript should compile.
+  - How strict the type-checking should be.
+  - How the compiled JavaScript should look (ES5, ES6, etc.).
   
   Feel free to play around with the settings—many of the options are explained in comments inside the file itself.
 
@@ -245,7 +245,7 @@ Now, let's write a small TypeScript example in ```script.ts```:
 To run the TypeScript file, we need to compile it into JavaScript.
  - Open your terminal and run the following command:
 
- ```terminal 
+ ```sh 
   tsc script.ts
  ```
 
@@ -271,7 +271,7 @@ What this does is run the TypeScript compiler (tsc) with the --watch flag, meani
 
 - Now, you can start the watch mode by running:
 
-  ```terminal 
+  ```sh 
     npm start
   ```
 
@@ -346,11 +346,8 @@ Let's take a look at an example that would work fine in JavaScript but cause an 
 
 In JavaScript, dividing or multiplying a number and a string that can be interpreted as a number is allowed. However, TypeScript will flag these operations as errors because ```t``` is a string, not a number:
 
-```typescript
-
 > [!WARNING]
 > Error: The right-hand side of an arithmetic operation must be of type ```'any'```, ```'number'```, ```'bigint'```, or an ```enum``` type.
-```
 
 You can either fix this by explicitly changing ```t```from ```"6"``` to ```6```, or by casting it to a number, like so:
 
@@ -410,10 +407,9 @@ If you try to assign a value that doesn't match the declared type, TypeScript wi
 
 ```typescript
   const numberILike: Person = 333;
-
+```
 > [!WARNING]
 >  Error: Type 'number' is not assignable to type 'string'
-```
 
 ### Example Using Objects
 
