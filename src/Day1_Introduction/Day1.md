@@ -15,13 +15,11 @@
   <small>Sep, 2024</small>
 </div>
 
-
 [Day 2 >>](../Day2_Types/Day2.md)
 
-
 <div align="center"> 
-  <a class="header-image" target="_blank" href="../Asset/images/TypeScript.jpeg">
-    <img alt="Typescript image" src="../Asset/images/TypeScript.jpeg" width="100%">
+  <a class="header-image" target="_blank" href="../Asset/images/Days/day_1.webp">
+    <img alt="Typescript image" src="../Asset/images/Days/day_1.webp" width="100%">
   </a>
 </div>
 
@@ -348,8 +346,11 @@ Let's take a look at an example that would work fine in JavaScript but cause an 
 
 In JavaScript, dividing or multiplying a number and a string that can be interpreted as a number is allowed. However, TypeScript will flag these operations as errors because ```t``` is a string, not a number:
 
+```typescript
+
 > [!WARNING]
 > Error: The right-hand side of an arithmetic operation must be of type ```'any'```, ```'number'```, ```'bigint'```, or an ```enum``` type.
+```
 
 You can either fix this by explicitly changing ```t```from ```"6"``` to ```6```, or by casting it to a number, like so:
 
@@ -369,10 +370,168 @@ You can configure TypeScript to not compile files that contain errors. To do thi
 
 With this option enabled, TypeScript will stop generating JavaScript files if there are any errors in your code.
 
+## Brief Overview of TypeScript
+
+Now that we’ve successfully set up our TypeScript project, let’s take a moment to dive into a quick overview of what TypeScript is and why it matters.
+
+### Types by Inference in TypeScript
+
+When you create a variable and assign a value to it, TypeScript automatically guesses the type based on the value you provided. This is called type inference.
+
+```typescript
+  let text = "Hello world!";
+  // Hover over "text", you'll see: let text: string
+```
+
+Since you assigned the value "Hello world!" (a string) to the text variable, TypeScript infers its type as string.
+
+### Defining Types Explicitly
+
+TypeScript is an extension of JavaScript, which lets you explicitly define what types your variables or objects should have.
+
+You can simply declare a variable like this in JavaScript or TypeScript:
+
+```typescript
+  let person = "Samson"; // This works in both JS and TS
+```
+
+However, in TypeScript, you can explicitly define a variable's type using the ```type``` keyword:
+
+```typescript
+  type Person = string;
+```
+
+Now, you can use this type in your code like this:
+
+```typescript
+  const myName: Person = "Samson";
+```
+If you try to assign a value that doesn't match the declared type, TypeScript will warn you:
+
+```typescript
+  const numberILike: Person = 333;
+
+> [!WARNING]
+>  Error: Type 'number' is not assignable to type 'string'
+```
+
+### Example Using Objects
+
+Now let’s move to something more complex — objects.
+
+Here’s a simple object in JavaScript:
+
+```typescript
+  const user = {
+    name: "Samson",
+    age: 24
+  }; // This works in both JS and TS
+```
+
+In TypeScript, we can define the shape of an object by using an ```interface```. An ```interface``` tells TypeScript what properties an object should have and their types.
+
+```typescript
+  interface User {
+    name: string;
+    age: number;
+  }
+```
+
+Now, you can use this ```User``` interface to define that your object should match this specific shape:
+
+```typescript
+  const userItem: User = {
+    name: "Samson",
+    age: 24,
+  };
+```
+
+If you try to add properties that aren’t defined in the interface, TypeScript will throw an error:
+
+```typescript
+  const newUserItem: User = {
+    username: "Samson", // Error: 'username' does not exist in type 'User'.
+    age: 24,
+  };
+```
+
+### Structural Typing (Duck Typing)
+
+One of TypeScript’s key concepts is that it cares about the shape of the data, not the exact name of the type. This is called structural typing or duck typing (if it looks like a duck and quacks like a duck, it's a duck!).
+
+Let’s say you have an interface:
+
+```typescript
+  interface Point {
+    x: number;
+    y: number;
+  }
+```
+
+You can use this ```Point``` interface in a function to log points:
+
+```typescript
+  function logPoint(p: Point) {
+    console.log(`${p.x}, ${p.y}`);
+  }
+```
+
+Now, even if you don't explicitly say a variable is a ```Point```, as long as it has the same shape (i.e., properties ```x``` and ```y```), TypeScript considers it to be of type ```Point```.
+
+```typescript
+  const point = { x: 12, y: 26 };
+  logPoint(point); // logs: "12, 26"
+```
+
+Even if your object has extra properties beyond what’s defined in the interface, it will still work because TypeScript is only concerned with the shape that matches:
+
+```typescript
+  const point3 = { x: 12, y: 26, z: 89 };
+  logPoint(point3); // logs: "12, 26"
+```
+
+Similarly, other objects with the same ```x``` and ```y``` properties will work too:
+
+```typescript
+  const rect = { x: 33, y: 3, width: 30, height: 80 };
+  logPoint(rect); // logs: "33, 3"
+```
+
+### Strictness Flags in TypeScript
+
+TypeScript also offers strictness flags to make your code safer and catch more errors. Two important ones you should know about are:
+
+```noImplicitAny```: This flag ensures that every variable or function has a clear type. If TypeScript can’t infer a type, it will force you to explicitly declare one.
+
+```strictNullChecks```: This flag helps avoid errors related to null or undefined. It forces you to handle these cases explicitly, so your code doesn’t accidentally break due to a missing value.
+
 🌟 Awesome job! You’ve successfully completed your Day 1, and you're well on your way to becoming a great developer. Keep up the momentum! Now, let's keep your mind sharp and your body active with some quick exercises.
 
 # 💻 Day 1: Exercises
 
+1. How do you check if Node.js is installed on your machine? What command do you use?
+2. Why is it important to have Node.js installed before working with TypeScript?
+3. What is the purpose of running npm ```init -y``` in your project folder? What file does it create?
+4. Why is it recommended to install TypeScript at the project level instead of globally? What’s the benefit?
+5. Write the command to install TypeScript locally and the command to verify that TypeScript is successfully installed?.
+6. What is the purpose of the ```tsconfig.json``` file in a TypeScript project?
+7. How can you ensure that TypeScript only compiles files in a specific folder like src?
+8. After writing your first TypeScript file (e.g., ```script.ts```), how do you compile it into JavaScript?
+9. Explain what happens when you try to run the following TypeScript code:
+
+```typescript
+  let s = 12;
+  let t = "6"; 
+  let v = 2;
+
+  console.log(s / t); // Error or no error?
+  console.log(v * t); // Error or no error?
+```
+
+10. In the ```tsconfig.json``` file, how would you configure it so that the compiled JavaScript files are stored in a folder called ```dest```?
+11. What does the ```noEmitOnError``` option do in the TypeScript config?
+12. Why is TypeScript considered a superset of JavaScript?
+13. How can TypeScript improve your development experience, especially when working on large-scale projects?
 
 
 🎉 CONGRATULATIONS ! 🎉
