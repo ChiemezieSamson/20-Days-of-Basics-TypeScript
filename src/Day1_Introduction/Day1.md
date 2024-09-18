@@ -19,7 +19,7 @@
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/day_1.webp">
-    <img alt="Typescript image" src="../Asset/images/Days/day_1.webp" width="100%">
+    <img alt="Typescript image" src="../Asset/images/Days/day_1.webp" width="100%" style="max-height: 400px">
   </a>
 </div>
 
