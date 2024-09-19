@@ -28,7 +28,7 @@
   - [Type Guards Using ```typeof```](#type-guards-using-typeof)
     - [Basics Exampless](#basics-examples)
 - [Type Annotations](#type-annotations)
-  - [Type Assignment: Explicit and Implicit Type](#type-assignment:-xplicit-and-implicit-type)
+- [Type Assignment: Explicit and Implicit Type](#type-assignment:-explicit-and-implicit-type)
     - [Implicit Type Assignment](#implicit-type-assignment)
     - [Explicit Type Assignment](#Explicit-type-assignment)
     - [Type Mismatch](#type-mismatch)
@@ -157,11 +157,11 @@ As mentioned above TypeScript has several basic types that let us define what ki
     const uniqueID: symbol = Symbol("id");
   ```
 	
-### Type Assignment: Explicit and Implicit Type
+## Type Assignment: Explicit and Implicit Type
 
 One of the core concepts in TypeScript is how types are assigned to variables, which can be done explicitly or implicitly. Let's break these concepts down with examples.
 
-#### Implicit Type Assignment
+### Implicit Type Assignment
 
 Implicit type assignment happens when TypeScript infers the type of a variable based on the value it’s assigned. This means you don't need to explicitly declare the type; TypeScript will figure it out for you.
 
@@ -189,7 +189,7 @@ TypeScript can also infer and check types in functions and objects.
 ```
 
 
-#### Explicit Type Assignment
+### Explicit Type Assignment
 	
 Explicit type assignment involves specifying the type of a variable directly using TypeScript’s type annotations just like we did on ```Type Annotations```. This approach can make your code clearer and prevent unintended errors.
 
@@ -213,7 +213,7 @@ Explicit type assignment involves specifying the type of a variable directly usi
   };
 ```
 
-#### Type Mismatch 
+### Type Mismatch 
 
 TypeScript will throw an error if you try to assign a value that doesn’t match the type:
 
@@ -224,7 +224,7 @@ TypeScript will throw an error if you try to assign a value that doesn’t match
   message = 55 // ❌ Error: Type 'number' is not assignable to type 'string'.
 ```
 
-#### Handling JSON
+### Handling JSON
 
 TypeScript may not always infer the type correctly. A common example is when using ```JSON.parse()```, which sets type to ```any``` by default and disables type checking:
 
