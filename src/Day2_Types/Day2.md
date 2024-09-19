@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 1](../Day2_Types/Day2.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)
+[<< Day 1](../Day1_Introduction/Day1.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/day_2.webp">
@@ -28,9 +28,9 @@
   - [Type Guards Using ```typeof```](#type-guards-using-typeof)
     - [Basics Exampless](#basics-examples)
 - [Type Annotations](#type-annotations)
-- [Type Assignment: Explicit and Implicit Type](#type-assignment:-explicit-and-implicit-type)
+- [Type Assignment: Explicit and Implicit Type](#type-assignment-explicit-and-implicit-type)
     - [Implicit Type Assignment](#implicit-type-assignment)
-    - [Explicit Type Assignment](#Explicit-type-assignment)
+    - [Explicit Type Assignment](#explicit-type-assignment)
     - [Type Mismatch](#type-mismatch)
     - [Handling JSON](#handling-json)
 - [Special Types](#special-types)
@@ -97,7 +97,7 @@ Here’s a list of basic types and how you check them using typeof:
   if (typeof value === "undefined") { /* ... */ }
 ```
 
-#### Basics Examples
+### Basics Examples
 
 **Checking a String**
 
@@ -130,6 +130,7 @@ In TypeScript, you often need to check if a variable is defined before using it.
       console.log("User's name is " + user.name);
   }
 ```
+
 Here, the typeof check prevents any errors if the name property is missing.
 
 
@@ -166,7 +167,7 @@ One of the core concepts in TypeScript is how types are assigned to variables, w
 Implicit type assignment happens when TypeScript infers the type of a variable based on the value it’s assigned. This means you don't need to explicitly declare the type; TypeScript will figure it out for you.
 
 ```typescript 
-	let message = "Hello, world!"; // TypeScript infers the type as 'string'
+  let message = "Hello, world!"; // TypeScript infers the type as 'string'
   let count = 42; // TypeScript infers the type as 'number'
   let isActive = true; // TypeScript infers the type as 'boolean'
 ```
@@ -218,7 +219,6 @@ Explicit type assignment involves specifying the type of a variable directly usi
 TypeScript will throw an error if you try to assign a value that doesn’t match the type:
 
 ```typescript 
-  
   message = "Hi" // No error
 
   message = 55 // ❌ Error: Type 'number' is not assignable to type 'string'.
@@ -693,4 +693,4 @@ To avoid this error completly use literal inference only when any other methods 
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 1](../Day2_Types/Day2.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)
+[<< Day 1](../Day1_Introduction/Day1.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)
