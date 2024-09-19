@@ -62,7 +62,7 @@
   
 # 📔 Day 1
 
-Hello, I'm Samson Nebeolisa. In this course, I'll be guiding you through the fundamentals of TypeScript, helping you build a strong foundation in this powerful programming language. If you need any help or want to support others, feel free to join our [telegram group](https://t.me/ThirtyDaysOfJavaScript).
+Hello, I'm Samson Nebeolisa. In this course, I'll be guiding you through the fundamentals of TypeScript, helping you build a strong foundation in this powerful programming language. If you need any help or want to support others, feel free to join our [telegram group](https://t.me/+RJdqfTtxbGIzYWY1).
 
 ## Introduction
 
