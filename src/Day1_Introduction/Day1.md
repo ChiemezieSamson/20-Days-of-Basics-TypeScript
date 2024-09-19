@@ -1,5 +1,10 @@
 # 30 Days of Basics TypeScript
 
+| # Day |                Topics                      |
+| ----- | :----------------------------------------: |
+| 01    |         [Introduction](./Day1.md)          |
+| 02    |       [Type](../Day2_Types/Day2.md)        |
+
 <div align="center"> 
   <h1>30 Days of Basics TypeScript: Introduction </h1>
 </div>
@@ -26,6 +31,7 @@
 ## Table of Contents
 
 - [30 Days of Basics TypeScript](#30-days-of-basics-typescript)
+- [📔 Day 1](#-day-1)
 - [Introduction](#introduction)
   - [Key Features of TypeScript](#key-features-of-typescript)
   - [Prerequisites](#prerequisites)
@@ -46,6 +52,13 @@
   - [Using Compiled JavaScript in HTML](#organizing-javascript-output)
   - [Handling JavaScript-Like Code in TypeScript](#handling-javascript-like-code-in-typescript)
   - [Preventing Compilation on Error](#preventing-compilation-on-error)
+- [Brief Overview of TypeScript](#brief-overview-of-typescript)
+  - [Types by Inference in TypeScript](#types-by-inference-in-typescript)
+  - [Defining Types Explicitly](#defining-types-explicitly)
+  - [Example Using Objects](#example-using-objects)
+  - [Structural Typing (Duck Typing)](#structural-typing-(duck-typing))
+  - [Strictness Flags in TypeScript](#strictness-flags-in-typescript)
+  - [💻 Day 1: Exercises](#-day-1-exercises)
   
 # 📔 Day 1
 
@@ -260,6 +273,8 @@ Typing ```tsc``` every time you make a change can get repetitive. Luckily, you c
 
   ``` "start": "tsc --watch" ```
 
+Like this:
+
   ```package.json 
     "scripts": {
       "start": "tsc --watch",
@@ -292,6 +307,8 @@ This tells TypeScript to treat the ```src``` folder as the root for all your ```
 If you want to make sure TypeScript only compiles files from your ```src``` folder and ignores anything else, you can add an ```"include"``` option to your ```tsconfig.json```:
 
 ``` "include": ["src"] ```
+
+Like this:
 
 ```json
    {
@@ -503,7 +520,7 @@ TypeScript also offers strictness flags to make your code safer and catch more e
 
 🌟 Awesome job! You’ve successfully completed your Day 1, and you're well on your way to becoming a great developer. Keep up the momentum! Now, let's keep your mind sharp and your body active with some quick exercises.
 
-# 💻 Day 1: Exercises
+## 💻 Day 1: Exercises
 
 1. How do you check if Node.js is installed on your machine? What command do you use?
 2. Why is it important to have Node.js installed before working with TypeScript?
