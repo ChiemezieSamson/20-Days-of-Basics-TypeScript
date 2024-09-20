@@ -1,9 +1,11 @@
 # 30 Days of Basics TypeScript
 
-| # Day |                Topics                      |
-| ----- | :----------------------------------------: |
-| 01    |         [Introduction](./Day1.md)          |
-| 02    |       [Type](../Day2_Types/Day2.md)        |
+|       # Day       |                             Topics                                |
+|:-----------------:| :---------------------------------------------------------------: |
+|         01        |                   [Introduction](./Day1.md)                       |
+|         02        |         [Types in TypeScript](../Day2_Types/Day2.md)              |
+|         03        |       [Arrays in TypeScript](../Day3_Array_Type/Day3.md)          |
+|         04        |               [Array Type](../Day4_Tuple/Day4.md)                 |
 
 <div align="center"> 
   <h1>30 Days of Basics TypeScript: Introduction </h1>

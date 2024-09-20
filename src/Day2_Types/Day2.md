@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h1>30 Days of Basics TypeScript: Introduction </h1>
+  <h1>30 Days of Basics TypeScript: Types </h1>
 </div>
 
 <div align="center"> 
@@ -53,7 +53,7 @@
 
 ### Type Guards Using ```typeof```
 
-As a front-end developer, one of the most important things TypeScript helps us with is type checking. TypeScript ensures that the variables and values we use in our code match their expected types. One way to perform type checking in TypeScript is using the ```typeof``` operator.
+As a developer, one of the most important things TypeScript helps us with is type checking. TypeScript ensures that the variables and values we use in our code match their expected types. One way to perform type checking in TypeScript is using the ```typeof``` operator.
 
 The ```typeof``` operator helps you determine what kind of data you’re dealing with at runtime (while your code is running). You can use it to safeguard your code by ensuring that variables have the right type before you use them.
 
