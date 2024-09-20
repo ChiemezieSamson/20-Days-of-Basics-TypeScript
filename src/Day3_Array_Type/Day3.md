@@ -40,13 +40,13 @@
 
 # 📔 Day 3
 
-## Arrays in TypeScript
+# Arrays in TypeScript
 
 If you're coming from JavaScript, arrays are likely an old friend. You've used them to store lists of values, loop through data, and perform countless other operations. But in TypeScript, arrays get a serious upgrade with strong typing. This means that while you still get the flexibility of arrays, you now also get the safety of knowing exactly what type of data those arrays are holding at any given moment. This extra layer of type-checking helps you catch errors early and makes your code more predictable, reliable, and easier to debug.
 
 As I mentioned at the beginning of this course, I won't be diving deeply into basic JavaScript concepts when discussing TypeScript. I’m assuming you already have a foundational understanding of JavaScript arrays. This allows us to focus more on how TypeScript enhances these familiar structures with features like strong typing and better error handling.
 
-### Typed Arrays
+## Typed Arrays
 
 TypeScript has a specific syntax for typing arrays.
 
@@ -80,7 +80,7 @@ TypeScript helps catch this mistake at compile time before you even run the code
   myArray.push(8); // ❌ Error: Argument of type 'number' is not assignable to parameter of type 'string'.
 ```
 
-### Generic Arrays
+## Generic Arrays
 
 Generics allow you to define reusable components, which can work with multiple types rather than a single one. Let’s break this down with __Generic Arrays__. Syntax for Generic Arrays:
 
@@ -125,7 +125,7 @@ Examples:
   }
 
   let peopleArray: Array<Person> = [
-      { name: "Alice", age: 30 },
+      { name: "Samson", age: 30 },
       { name: "Bob", age: 25 }
   ];
 
@@ -152,7 +152,7 @@ Let’s create a function that can reverse arrays of any type, using generics:
 
 If there's anything from the above that isn't completely clear right now, don't worry—by the end of this course, you'll have a solid understanding of it all.
 
-### Arrays with Multiple Data Types
+## Arrays with Multiple Data Types
 
 You can define arrays that hold different types of data using union types (```|```). This is useful when you need an array to store mixed values like strings and numbers.
 
@@ -164,7 +164,7 @@ You can define arrays that hold different types of data using union types (```|`
   mixedArray.push(true);  // ❌ Error: Argument of type 'boolean' is not assignable to parameter of type 'string | number'.
 ```
 
-### Arrays of Objects
+## Arrays of Objects
 
 It’s common to work with arrays of objects in development. For example, an array of people with ```id```, ```name```, ```email``` and ```age``` fields. ```Types``` or ```interfaces``` is used to define the shape (structure) of an object, which helps with type safety.
 
@@ -196,7 +196,7 @@ It’s common to work with arrays of objects in development. For example, an arr
   people.push({ name: "David", age: "forty" }); // ❌ Error: Type 'string' is not assignable to 'number'.
 ```
 
-#### **Array of Objects with Nested Objects**
+### **Array of Objects with Nested Objects**
 TypeScript just like in javaScript also allows objects within objects. Here’s how you can handle nested objects:
 
 ```ts
@@ -221,7 +221,7 @@ TypeScript just like in javaScript also allows objects within objects. Here’s 
   console.log(users[0].address.city); // Output: 'New York'
 ```
 
-#### **Array of Objects with Optional Properties**
+### **Array of Objects with Optional Properties**
 
 As a developer, you’ll often encounter situations where not all properties of an object are immediately available or applicable. For instance, when working with product data, there may be times when some products lack certain details, like a price. This could happen because the price is not yet available in the database, or it's a product feature that might not apply to all items.
 
@@ -245,7 +245,7 @@ To handle such cases, TypeScript provides a way to define optional properties us
   });
 ```
 
-#### **Common Operations with Arrays of Objects** 
+### **Common Operations with Arrays of Objects** 
 
 ```ts
   // Add a new object to the array
@@ -279,7 +279,7 @@ To handle such cases, TypeScript provides a way to define optional properties us
   console.log(updatedProducts);
 ```
 
-### Multi-Dimensional Arrays 
+## Multi-Dimensional Arrays 
  
  This is same with javaScript ```Array of Arrays```. This structure consists of multiple arrays nested inside a single array. It's useful when you want to group related sets of data, like a grid of numbers or a collection of lists.
 
@@ -301,7 +301,7 @@ An array of arrays is essentially a multi-dimensional array where each element i
   matrix[0][1] = "11"; // ❌ Error: Type 'string' is not assignable to type 'number'.
 ```
 
-### Arrays as Function Parameters
+## Arrays as Function Parameters
 
 When passing an array to a function, you can also specify the type of array the function should accept. This ensures that the array passed in matches the expected type.
 
@@ -325,7 +325,7 @@ When passing an array to a function, you can also specify the type of array the 
   printStrings([1, 2, 3]); // ❌ Error: 'number[]' is not assignable to 'string[]'.
 ```
 
-### Array of Functions
+## Array of Functions
 
 You can also create an array of functions, which is handy in many scenarios:
 
@@ -338,7 +338,7 @@ You can also create an array of functions, which is handy in many scenarios:
   functionArray.forEach(func => func());  // This will call both functions.
 ```
 
-### Readonly Arrays
+## Readonly Arrays
 
 Sometimes you might want an array that cannot be changed. TypeScript provides a way to create arrays that are "read-only," meaning no one can add, remove, or change the items in the array.
 
