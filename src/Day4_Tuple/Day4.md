@@ -32,7 +32,7 @@
   - [Tuples with Rest Elements](#tuples-with-rest-elements)
   - [Tuple with Rest Element in Function Parameters](#tuple-with-rest-element-in-function-parameters)
   - [Readonly Tuples](#readonly-tuples)
-  - [Real-World Use Case: HTTP Response Tuple](#real-world-use-case:-http-response-tuple)
+  - [Real-World Use Case: HTTP Response Tuple](#real-world-use-case-http-response-tuple)
   - [When to Use Tuples vs. Arrays](#when-to-use-tuples-vs-arrays)
 - [💻 Day 4: Exercises](#-day-4-exercises)
   - [Exercise: Level 1](#exercise-level-1)
@@ -272,7 +272,7 @@ A common use case for tuples is handling HTTP responses in a simple way, where t
 
 ## 💻 Day 4: Exercises
 
-### Exercises: Level 1
+### Exercise: Level 1
 
 1. Create a tuple that holds a ```string``` and a ```number```. Try the following:
     - Define a tuple with the values ```"Alice"``` and ```25```.
@@ -298,7 +298,7 @@ A common use case for tuples is handling HTTP responses in a simple way, where t
   - Manually define ```myTuple``` as a tuple of ```string``` and ```number```, ensure TypeScript enforces the correct types.
   - Can you add an extra element to the tuple using push? Why or why not?
 
-### Exercises: Level 2
+### Exercise: Level 2
 
 4. Write a function that returns a tuple of two numbers (representing coordinates). Then:
 
@@ -332,7 +332,7 @@ A common use case for tuples is handling HTTP responses in a simple way, where t
   - Modify the function to only read from the tuple without trying to modify it.
   - Can you still append more elements to a tuple defined with rest elements if it is marked as `readonly`? Why or why not?
 
-### Exercises: Level 3
+### Exercise: Level 3
 
 7. Define a tuple for a coordinate system to represent 3D points with ```x```, ```y```, and ```z``` values as numbers. Then, write a function ```calculateDistance``` that takes this tuple and returns the distance from the origin ```(0, 0, 0)```.
 
