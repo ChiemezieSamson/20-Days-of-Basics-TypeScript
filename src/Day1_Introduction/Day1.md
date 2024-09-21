@@ -5,7 +5,9 @@
 |         01        |                   [Introduction](./Day1.md)                       |
 |         02        |         [Types in TypeScript](../Day2_Types/Day2.md)              |
 |         03        |       [Arrays in TypeScript](../Day3_Array_Type/Day3.md)          |
-|         04        |               [Array Type](../Day4_Tuple/Day4.md)                 |
+|         04        |       [Tuple Types in TypeScript](../Day4_Tuple/Day4.md)          |
+|         05        |      [Object Types in TypeScript](../Day5_Objects/Day5.md)        |
+|         06        |     [Tuple Types in TypeScript](../Day6_Functions/Day6.md)         |
 
 <div align="center"> 
   <h1>30 Days of Basics TypeScript: Introduction </h1>
