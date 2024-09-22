@@ -44,7 +44,7 @@
 
 If you're coming from JavaScript, arrays are likely an old friend. You've used them to store lists of values, loop through data, and perform countless other operations. But in TypeScript, arrays get a serious upgrade with strong typing. This means that while you still get the flexibility of arrays, you now also get the safety of knowing exactly what type of data those arrays are holding at any given moment. This extra layer of type-checking helps you catch errors early and makes your code more predictable, reliable, and easier to debug.
 
-As I mentioned at the beginning of this course, I won't be diving deeply into basic JavaScript concepts when discussing TypeScript. I’m assuming you already have a foundational understanding of JavaScript arrays. This allows us to focus more on how TypeScript enhances these familiar structures with features like strong typing and better error handling.
+> As I mentioned at the beginning of this course, I won't be diving deeply into basic JavaScript concepts when discussing TypeScript. I’m assuming you already have a foundational understanding of JavaScript arrays. This allows us to focus more on how TypeScript enhances these familiar structures with features like strong typing and better error handling.
 
 ## Typed Arrays
 

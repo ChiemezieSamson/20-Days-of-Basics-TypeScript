@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 4](../Day4_Tuple/Day4.md) | [Day 6 >>](../Day6_Functions/Day6.md)
+[<< Day 4](../Day4_Tuple/Day4.md) | [Day 6 >>](../Day6_Functions_1/Day6.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/Day_5.webp">
@@ -567,4 +567,4 @@ Generics make your code:
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 4](../Day4_Tuple/Day4.md) | [Day 6 >>](../Day6_Functions/Day6.md)
+[<< Day 4](../Day4_Tuple/Day4.md) | [Day 6 >>](../Day6_Functions_1/Day6.md)

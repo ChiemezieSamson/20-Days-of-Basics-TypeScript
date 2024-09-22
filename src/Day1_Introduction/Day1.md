@@ -7,7 +7,9 @@
 |         03        |       [Arrays in TypeScript](../Day3_Array_Type/Day3.md)          |
 |         04        |       [Tuple Types in TypeScript](../Day4_Tuple/Day4.md)          |
 |         05        |      [Object Types in TypeScript](../Day5_Objects/Day5.md)        |
-|         06        |     [Tuple Types in TypeScript](../Day6_Functions/Day6.md)         |
+|         06        |     [Functions in TypeScript 1](../Day6_Functions_1/Day6.md)      |
+|         07        |     [Functions in TypeScript 2](../Day7_Functions_2/Day7.md)      |
+|         08        |       [Narrowing in TypeScript](../Day8_Narrowing/Day8.md)        |
 
 <div align="center"> 
   <h1>30 Days of Basics TypeScript: Introduction </h1>
