@@ -301,7 +301,7 @@ By using `.bind(buttonHandler)`, you tell TypeScript that `this` inside `onClick
 
 - __Consistency__: By explicitly declaring the `this` type, you make sure that `this` works as expected across different parts of your application, especially in callbacks and event listeners.
 
-🌟 Awesome job! You’ve successfully completed your Day 6, and you're well on your way to becoming a great developer. Keep up the momentum! Now, let's keep your mind sharp and your body active with some quick exercises.
+🌟 Awesome job! You’ve successfully completed your Day 7, and you're well on your way to becoming a great developer. Keep up the momentum! Now, let's keep your mind sharp and your body active with some quick exercises.
 
 ## 💻 Day 7: Exercises
 
