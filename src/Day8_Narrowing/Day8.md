@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 7](../Day7_Functions_2/Day7.md) | [Day 9 >>](../Day9_Type_Manipulation/Day9)
+[<< Day 7](../Day7_Functions_2/Day7.md) | [Day 9 >>](../Day9_Type_Manipulation/Day9.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/Day_8.webp">
@@ -24,7 +24,7 @@
 ## Table of Contents
 
 - [📔 Day 8](#-day-8)
-- [TypeScript Narrowing](#typescript_narrowing)
+- [TypeScript Narrowing](#typescript-narrowing)
   - [1. Truthiness Narrowing](#1-truthiness-narrowing)
   - [2. Equality Narrowing](#2-equality-narrowing)
 - [Why Narrowing Matters](#why-narrowing-matters)
@@ -405,4 +405,4 @@ Here’s a more dynamic example where we need to check whether an animal can swi
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 7](../Day7_Functions_2/Day7.md) | [Day 9 >>](../Day9_Type_Manipulation/Day9)
+[<< Day 7](../Day7_Functions_2/Day7.md) | [Day 9 >>](../Day9_Type_Manipulation/Day9.md)

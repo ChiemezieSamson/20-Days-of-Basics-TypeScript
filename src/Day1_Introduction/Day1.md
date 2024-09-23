@@ -10,6 +10,7 @@
 |         06        |     [Functions in TypeScript 1](../Day6_Functions_1/Day6.md)      |
 |         07        |     [Functions in TypeScript 2](../Day7_Functions_2/Day7.md)      |
 |         08        |       [Narrowing in TypeScript](../Day8_Narrowing/Day8.md)        |
+|         09        |      [Type Manipulation](../Day9_Type_Manipulation/Day9.md)       |
 
 <div align="center"> 
   <h1>30 Days of Basics TypeScript: Introduction </h1>
