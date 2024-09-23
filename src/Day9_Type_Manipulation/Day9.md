@@ -213,7 +213,7 @@ The `keyof` operator is used to get all the keys (or property names) of an objec
 
 __Indexed access types__ let you access the type of a specific property or element from an object or array. This means you can extract and reuse the type of any property, keeping your code more dynamic.
 
-// Basic example:
+Basic example:
 
 ```ts
   interface Person {
