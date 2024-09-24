@@ -11,6 +11,8 @@
 |         07        |     [Functions in TypeScript 2](../Day7_Functions_2/Day7.md)      |
 |         08        |       [Narrowing in TypeScript](../Day8_Narrowing/Day8.md)        |
 |         09        |      [Type Manipulation](../Day9_Type_Manipulation/Day9.md)       |
+|         10        |     [Conditional Types](../Day10_Conditional_Types/Day10.md)      |
+|         11        |          [Mapped Types](../Day11_Mapped_Types/Day11.md)           |
 
 <div align="center"> 
   <h1>30 Days of Basics TypeScript: Introduction </h1>
