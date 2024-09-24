@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h1>20 Days of Basics TypeScript: Classes</h1>
+  <h1>20 Days of Basics TypeScript: Classes 1</h1>
 </div>
 
 <div align="center"> 
@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 12](../Day13_Classes/Day13.md) | [Day 14 >>](../Day13_Classes/Day13.md)
+[<< Day 12](../Day12_Template_Literal_Types/Day12.md) | [Day 14 >>](../Day14_Classes_2/Day14.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/Day_13.webp">
@@ -24,18 +24,24 @@
 ## Table of Contents
 
 - [📔 Day 13](#-day-13)
-- [ Classes in TypeScript](# Classes in TypeScript)
-  - [Enforcing Specific String Patterns](#enforcing-specific-string-patterns)
-  - [Combining Literal Types for Specific Cases](#combining-literal-types-for-specific-cases)
-  - [Template Literal Types with Generics](#template-literal-types-with-generics)
-  - [Reactivity and Events with Template Literal Types](#reactivity-and-events-with-template-literal-types)
-- [Intrinsic String Manipulation Types](#intrinsic-string-manipulation-types)
-  - [Intrinsic String Manipulation Utilities](#intrinsic-string-manipulation-utilities)
-  - [Dynamic URL Paths](#dynamic-url-paths)
-  - [Parsing URL Parameters](#parsing-url-parameters)
-  - [Advanced API Route Generation](#advanced-api-route-generation)
-  - [Inferring Values from Template Literals](#inferring-values-from-template-literals)
-  - [Building Object Types from URL Parameters](#building-object-types-from-url-parameters)
+- [Classes in TypeScript](#classes-in-typeScript)
+  - [Basic Class Structure](#basic-class-structure)
+- [Adding Properties (Fields)](#adding-properties-fields)
+  - [Fields with Initial Values](#fields-with-initial-values)
+  - [Readonly Fields](#readonly-fields)
+- [Class Constructors](#class-constructors)
+- [Methods in Classes](#methods-in-classes)
+  - [Getters and Setters](#getters-and-setters)
+- [Index Signatures in Classes](#index-signatures-in-classes)
+- [Class Inheritance](#class-inheritance)
+  - [The `extends` Clause](#the-extends-clause)
+  - [The `implements` Clause](#the-implements-clause)
+  - [Key Differences Between `extends` and `implements`](#key-differences-between-extends-and-implements)
+- [Overriding Methods](#overriding-methods)
+  - [Example of Overriding](#example-of-overriding)
+- [Calling `super()` in Inheritance](#calling-super()-in-inheritance)
+  - [Calling `super` in the Constructor](#calling-super-in-the-constructor)
+  - [Calling `super` in Methods](#calling-super-in-methods)
 - [💻 Day 13: Exercises](#-day-13-exercises)
   - [Exercise: Level 1](#exercise-level-1)
   - [Exercise: Level 2](#exercise-level-2)
@@ -64,7 +70,7 @@ Both of these create a class, but the key difference is:
 
 Right now, these classes don’t do anything. So, let's add some properties and methods to make them useful.
 
-### Adding Properties (Fields)
+## Adding Properties (Fields)
 
 A field in a class is like a property that holds data. For example, let’s define a class `Point` that holds two properties: `x` and `y`, which represent coordinates:
 
@@ -366,14 +372,14 @@ Let’s say we have a class called Ball that is supposed to implement the Printa
 
 This error happens because `Ball` promised to follow the `Printable` interface but didn't implement the required `print()` method. This is TypeScript’s way of helping us catch mistakes early.
 
-### Key Differences Between `extends` and `implements`:
+### Key Differences Between `extends` and `implements`
 
-|    Feature    |               `extends`            |               `implements`              |
-|:-----------------------------:|:-----------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
-| Purpose                       | Inherits properties and methods from a parent class.                          | Ensures a class follows a specific structure (defined by an interface).                       |
+|           Feature             |                                 `extends`                                     |                                                 `implements`                                              |
+|:-----------------------------:|:-----------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|
+| Purpose                       | Inherits properties and methods from a parent class.                          | Ensures a class follows a specific structure (defined by an interface).                                   |
 | Reuse Code                    | Yes, the child class can reuse the logic from the parent class.               | No, the class must provide its own implementation of the methods in the interface.                        |
-| Parent-Child Relationship     | Yes, creates a parent-child relationship between classes.                     | No, interfaces don’t provide actual functionality, just a contract to follow.                           |
-| Number of Classes/Interfaces  | Can only extend one class (single inheritance).                               | Can implement multiple interfaces (multiple contracts).                       |
+| Parent-Child Relationship     | Yes, creates a parent-child relationship between classes.                     | No, interfaces don’t provide actual functionality, just a contract to follow.                             |
+| Number of Classes/Interfaces  | Can only extend one class (single inheritance).                               | Can implement multiple interfaces (multiple contracts).                                                   |
 | Example Usage                 | Creating specialized versions of general objects (e.g., Car extends Vehicle). | Enforcing consistency across different types of objects (e.g., Book and Magazine must both be Printable). |
 
 ## Overriding Methods 
@@ -425,7 +431,7 @@ Imagine you have a parent class `Animal` that has a method `makeSound()`. This m
 
 When working with inheritance in TypeScript, just like in JavaScript, if a class extends a base class (parent class), you must call `super()` within the constructor of the derived class (child class). This ensures the parent class is properly initialized before you try to access any `this` members in the child class.
 
-###  Calling `super` in the Constructor
+### Calling `super` in the Constructor
 
 When a class extends another class, the child class needs to initialize the parent class's constructor before it can access `this` or add its own properties. This is done by calling `super()` in the constructor of the child class.
 
@@ -448,7 +454,7 @@ The `super()` call invokes the constructor of the parent class, ensuring that al
 
 TypeScript will warn you if you forget to call `super()` when required, making sure you handle inheritance correctly.
 
-### Calling super in Methods
+### Calling `super` in Methods
 
 In addition to calling `super()` in the constructor, sometimes you may want to override a method in the child class but still leverage some of the functionality from the parent class. You can do this by explicitly calling `super.methodName()` from the overridden method in the child class. This allows the child class to build upon the behavior defined in the parent class rather than completely replacing it.
 
@@ -482,3 +488,39 @@ Using `super` in a method lets you reuse the parent’s logic while adding or mo
   // Buddy is making a sound.
   // Buddy, the Golden Retriever, is meowing!
 ```
+
+🌟 Awesome job! You’ve successfully completed your Day 13, and you're well on your way to becoming a great developer. Keep up the momentum! Now, let's keep your mind sharp and your body active with some quick exercises.
+
+## 💻 Day 13: Exercises
+
+### Exercise: Level 1
+
+1. Create a `Product` class with a property `price`. Write a method `applyDiscount(discount: number)` that reduces the `price` by a given discount percentage. Create an instance of `Product` with a price of 100 and apply a 10% discount.
+
+2. Create a `BankAccount` class that has a private property `balance` and a method `deposit(amount: number)` that increases the balance. Add a method `getBalance()` that returns the current balance. Ensure that the `balance` can't be accessed directly from outside the class. Create an instance of `BankAccount` with an initial balance of 0, deposit 500, and then check the balance.
+
+3. Create a class `Car` with a `model` property and a `year` property that defaults to 2023. Write a constructor to initialize model and optionally `year`. If the `year` is not provided, it should use the default value. Create an instance of `Car` without passing the year. What is the value of year?
+
+4. Create a parent class `Employee` with a property `name` and a method `work()`. Then, create a child class `Manager` that extends `Employee` and overrides the `work()` method to add an extra behavior: calling a new method `attendMeeting()`. Create an instance of `Manager` and call the `work()` method.
+
+### Exercise: Level 2
+
+5. Define a parent class `Bird` with a method `fly()` that logs `"The bird flies"`. Then, create a child class `Penguin` that overrides the `fly()` method to log `"Penguins cannot fly"`. Create instances of both classes and call `fly()` on each.
+
+6. Create a class `User` with a method `login()` that logs `"User logged in"`. Create a child class `Admin` that overrides the `login()` method to also log `"Admin has special privileges"` but still calls the `login()` method from the User class. 
+
+7. Create two interfaces: `Eater` with a method `eat()`, and `Sleeper` with a method `sleep()`. Then create a class `Person` that implements both `Eater` and `Sleeper`, defining both methods. Instantiate the class and call both methods.
+
+8. Create an interface `Playable` with a method `start()`. Then create a class `VideoGame` that implements `Playable` and adds another method `pause()`. Ensure the class works with both start() and `pause()`. How would you instantiate `VideoGame` and call both methods?
+
+### Exercise: Level 3
+
+9. Write a class `Book` with two constructors: one that takes both `title` and `author`, and another that only takes `title` and defaults `author` to `"Unknown"`. Create two instances, one with both properties and one with only the `title`. How does TypeScript handle constructor overloading?
+
+10. Write a class `Logger` with a method `log(message: string, level?: string)`. The `level` parameter should be optional and default to `"INFO"`. If the level is `"ERROR"`, it should prepend `"ERROR: "` to the message. Test the method by logging a normal message and an error message. 
+
+11. Create a generic class `Box<T>` that can store an item of any type (`T`). Add methods `store(item: T)` and `retrieve()` to store and retrieve the item. Test the class with both `number` and `string` types. How does TypeScript ensure type safety in this scenario?
+
+🎉 CONGRATULATIONS ! 🎉
+
+[<< Day 12](../Day12_Template_Literal_Types/Day12.md) | [Day 14 >>](../Day14_Classes_2/Day14.md)
