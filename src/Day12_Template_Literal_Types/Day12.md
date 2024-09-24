@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 11](../Day11_Mapped_Types/Day11.md) | [Day 13 >>](../Day13_Classes/Day13.md)
+[<< Day 11](../Day11_Mapped_Types/Day11.md) | [Day 13 >>](../Day13_Classes_1/Day13.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/Day_12.webp">
@@ -328,7 +328,7 @@ You can take it a step further and use the parsed parameters to build an object 
 
 🌟 Awesome job! You’ve successfully completed your Day 12, and you're well on your way to becoming a great developer. Keep up the momentum! Now, let's keep your mind sharp and your body active with some quick exercises.
 
-## 💻 Day 11: Exercises
+## 💻 Day 12: Exercises
 
 ### Exercise: Level 1
 
@@ -379,6 +379,11 @@ Create a type `UserKeysAsCSS` that converts the keys of the `User` object into C
   - `"Not Found"` for `404`,
   - `"Server Error"` for `500`.
 
+10. Create a type-safe function `createClassName` that:
+
+- Accepts a prefix (like `"btn"` or `"card"`) and a state (like `"primary"`, `"secondary"`, or `"disabled"`).
+- Returns a combined class name like `"btn-primary"` or `"card-disabled"`.
+
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 11](../Day11_Mapped_Types/Day11.md) | [Day 13 >>](../Day13_Classes/Day13.md)
+[<< Day 11](../Day11_Mapped_Types/Day11.md) | [Day 13 >>](../Day13_Classes_1/Day13.md)
