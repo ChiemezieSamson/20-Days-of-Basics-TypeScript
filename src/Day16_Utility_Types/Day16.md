@@ -25,7 +25,7 @@
 
 - [📔 Day 16](#-day-16)
 - [Utility Types in TypeScript](#utility-types-in-typescript)
-- [`Partial<Type>`](#partial-type)
+- [`Partial<Type>`](#partial<type>)
 - [`Required<Type>`](#required-type)
 - [`Readonly<Type>`](#readonly-type)
 - [`Pick<Type, Keys>`](#pick-type-keys)
