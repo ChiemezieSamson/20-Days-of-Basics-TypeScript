@@ -1,21 +1,25 @@
-# 30 Days of Basics TypeScript
+# 20 Days of Basics TypeScript
 
-|       # Day       |                             Topics                                |
-|:-----------------:| :---------------------------------------------------------------: |
-|         01        |                   [Introduction](./Day1.md)                       |
-|         02        |         [Types in TypeScript](../Day2_Types/Day2.md)              |
-|         03        |       [Arrays in TypeScript](../Day3_Array_Type/Day3.md)          |
-|         04        |       [Tuple Types in TypeScript](../Day4_Tuple/Day4.md)          |
-|         05        |      [Object Types in TypeScript](../Day5_Objects/Day5.md)        |
-|         06        |     [Functions in TypeScript 1](../Day6_Functions_1/Day6.md)      |
-|         07        |     [Functions in TypeScript 2](../Day7_Functions_2/Day7.md)      |
-|         08        |       [Narrowing in TypeScript](../Day8_Narrowing/Day8.md)        |
-|         09        |      [Type Manipulation](../Day9_Type_Manipulation/Day9.md)       |
-|         10        |     [Conditional Types](../Day10_Conditional_Types/Day10.md)      |
-|         11        |          [Mapped Types](../Day11_Mapped_Types/Day11.md)           |
+|       # Day       |                               Topics                                 |
+|:-----------------:| :------------------------------------------------------------------: |
+|         01        |                      [Introduction](./Day1.md)                       |
+|         02        |            [Types in TypeScript](../Day2_Types/Day2.md)              |
+|         03        |         [Arrays in TypeScript](../Day3_Array_Type/Day3.md)           |
+|         04        |         [Tuple Types in TypeScript](../Day4_Tuple/Day4.md)           |
+|         05        |        [Object Types in TypeScript](../Day5_Objects/Day5.md)         |
+|         06        |       [Functions in TypeScript 1](../Day6_Functions_1/Day6.md)       |
+|         07        |       [Functions in TypeScript 2](../Day7_Functions_2/Day7.md)       |
+|         08        |         [Narrowing in TypeScript](../Day8_Narrowing/Day8.md)         |
+|         09        |        [Type Manipulation](../Day9_Type_Manipulation/Day9.md)        |
+|         10        |      [Conditional Types](../Day10_Conditional_Types/Day10.md)        |
+|         11        |            [Mapped Types](../Day11_Mapped_Types/Day11.md)            |
+|         12        |  [Template Literal Types](../Day12_Template_Literal_Types/Day12.md)  |
+|         13        |                [Classes 1](../Day13_Classes_1/Day13.md)              |
+|         14        |                [Classes 2](../Day14_Classes_2/Day14.md)              |
+|         15        |                  [Modules](../Day15_Modules/Day15.md)                |
 
 <div align="center"> 
-  <h1>30 Days of Basics TypeScript: Introduction </h1>
+  <h1>20 Days of Basics TypeScript: Introduction </h1>
 </div>
 
 <div align="center"> 
