@@ -25,22 +25,22 @@
 
 - [📔 Day 16](#-day-16)
 - [Utility Types in TypeScript](#utility-types-in-typescript)
-- [`Partial<Type>`](#partialtype)
-- [`Required<Type>`](#requiredtype)
-- [`Readonly<Type>`](#readonlytype)
-- [`Pick<Type, Keys>`](#picktype-keys)
-- [`Omit<Type, Keys>`](#omittype-keys)
-  - [Use Case Example](#use-case-example)
-- [`Record<Keys, Type>`](#recordkeys-type)
-- [`Exclude<Type, ExcludedUnion>`](#excludetype-excludedUnion)
-- [`Extract<Type, Union>`](#extracttype-union)
-- [`NonNullable<Type>`](#nonnullabletype)
-- [`ReturnType<Type>`](#returntypetype)
-- [`Parameters<Type>`](#parameterstype)
-- [`Awaited<Type>`](#awaitedtype)
-  - [Why Use `Awaited<Type>`?](#why-use-awaited-type)
-  - [Using `Awaited<Type>` with Async Functions](#using-awaited-type-with-async-functions)
-  - [Handling Nested Promises in Async Functions](#handling-nested-promises-in-async-functions)
+  - [`Partial<Type>`](#partialtype)
+  - [`Required<Type>`](#requiredtype)
+  - [`Readonly<Type>`](#readonlytype)
+  - [`Pick<Type, Keys>`](#picktype-keys)
+  - [`Omit<Type, Keys>`](#omittype-keys)
+    - [Use Case Example](#use-case-example)
+  - [`Record<Keys, Type>`](#recordkeys-type)
+  - [`Exclude<Type, ExcludedUnion>`](#excludetype-excludedUnion)
+  - [`Extract<Type, Union>`](#extracttype-union)
+  - [`NonNullable<Type>`](#nonnullabletype)
+  - [`ReturnType<Type>`](#returntypetype)
+  - [`Parameters<Type>`](#parameterstype)
+  - [`Awaited<Type>`](#awaitedtype)
+    - [Why Use `Awaited<Type>`?](#why-use-awaited-type)
+    - [Using `Awaited<Type>` with Async Functions](#using-awaited-type-with-async-functions)
+    - [Handling Nested Promises in Async Functions](#handling-nested-promises-in-async-functions)
 - [💻 Day 16: Exercises](#-day-16-exercises)
   - [Exercise: Level 1](#exercise-level-1)
   - [Exercise: Level 2](#exercise-level-2)
@@ -53,7 +53,7 @@
 
 Utility types in TypeScript are a set of built-in types that help you manipulate and create new types from existing ones. They make it easier to work with complex data structures and ensure your code is reusable, maintainable, and type-safe. Let's explore some of the most commonly used utility types with simple examples.
 
-##  `Partial<Type>`
+###  `Partial<Type>`
 
 The `Partial` utility type allows you to create a new type where all properties of an existing type become optional. This is especially useful when you need to update or modify just part of an object, rather than all its properties.
 
@@ -75,7 +75,7 @@ The `Partial` utility type allows you to create a new type where all properties 
 
 Here, `userUpdate` can include any combination of the `User` properties (or none at all), since `Partial<User> `makes all properties optional.
 
-## `Required<Type>`
+### `Required<Type>`
 
 The `Required` utility does the opposite of `Partial`. It makes all optional properties of a type mandatory. This is useful when you need to ensure that all fields are filled out.
 
@@ -102,7 +102,7 @@ The `Required` utility does the opposite of `Partial`. It makes all optional pro
 
 In this case, `getFullConfig` ensures that `host`, `port`, and `protocol` are always defined, even if the initial configuration is incomplete.
 
-## `Readonly<Type>`
+### `Readonly<Type>`
 
 The `Readonly` utility type turns all properties of an object into read-only properties, meaning they cannot be changed after the object is created.
 
@@ -124,7 +124,7 @@ The `Readonly` utility type turns all properties of an object into read-only pro
 
 Once `myProfile` is defined, its properties cannot be reassigned because it's marked as `Readonly<User>`.
 
-## `Pick<Type, Keys>`
+### `Pick<Type, Keys>`
 
 The `Pick` utility type allows you to create a new type by picking a specific set of properties from an existing type. This is useful when you only need a subset of the original type.
 
@@ -146,7 +146,7 @@ The `Pick` utility type allows you to create a new type by picking a specific se
 
 Here, `UserOverview` only includes the `id` and `email` properties from the `User` type.
 
-## `Omit<Type, Keys>`
+### `Omit<Type, Keys>`
 
 The `Omit` utility type allows you to create a new type by excluding certain properties from an existing type. This is the inverse of `Pick`.
 
@@ -168,7 +168,7 @@ The `Omit` utility type allows you to create a new type by excluding certain pro
 
 In this example, `HideEmail` has all the properties of `User` except for `email`.
 
-### Use Case Example
+#### Use Case Example
 
 Let’s break down how TypeScript utility types can be applied in a real-world scenario. Imagine you’re building a blog system where you handle different types of blog-related operations. Utility types make working with types easier and more flexible, allowing you to manage parts of your application in a cleaner, more efficient way.
 
@@ -223,7 +223,7 @@ Now, let’s see how we can use different utility types with this interface.
   };
 ```
 
-## `Record<Keys, Type>`
+### `Record<Keys, Type>`
 
 The `Record` utility type allows you to create an object type that maps a set of properties (keys) to a specific type for the values. This is especially useful when you need to ensure that an object has a consistent structure.
 
@@ -262,7 +262,7 @@ let's see another example:
 
 In this example, `Record<Weekday, string>` ensures that each day of the week has a corresponding task, and the keys are restricted to the weekdays we defined.
 
-## `Exclude<Type, ExcludedUnion>`
+### `Exclude<Type, ExcludedUnion>`
 
 `Exclude` allows you to create a new type by excluding certain types from an existing union type. This is useful when you want to refine a type and remove certain values.
 
@@ -292,7 +292,7 @@ let's see another example with `Exclude`:
   const invalidColor: SecondaryColors = 'red'; // ❌ Error: 'red' is excluded
 ```
 
-## `Extract<Type, Union>`
+### `Extract<Type, Union>`
 
 `Extract` works the opposite way to `Exclude`. It extracts specific types from a union type. This is helpful when you only want to work with certain values from a larger set.
 
@@ -304,7 +304,7 @@ let's see another example with `Exclude`:
   const action: LoginAction = 'login'; // Only 'login' is allowed
 ```
 
-## `NonNullable<Type>`
+### `NonNullable<Type>`
 
 `NonNullable` removes `null` and `undefined` from a type, ensuring that your values cannot be `null` or `undefined`. This is useful when you want to make sure your type is always valid and defined.
 
@@ -319,7 +319,7 @@ const invalidValue: NonNullableString = null; // ❌ Error: Type 'null' is not a
 
 In this example, `NonNullable<StringOrNull>` removes `null` and `undefined`, so NonNullableString only allows non-nullable `string` values.
 
-## `ReturnType<Type>`
+### `ReturnType<Type>`
 
 `ReturnType` allows you to infer the return type of a function, which can be useful when you want to ensure consistency across your code without manually defining the return type.
 
@@ -341,7 +341,7 @@ In this example, `NonNullable<StringOrNull>` removes `null` and `undefined`, so 
   };
 ```
 
-## `Parameters<Type>`
+### `Parameters<Type>`
 
 The `Parameters` utility type extracts the parameter types of a function as a tuple. This is useful when you want to reuse or manipulate the types of a function’s parameters.
 
@@ -373,13 +373,13 @@ The `Parameters` utility type extracts the parameter types of a function as a tu
 
 This is helpful when you want to reuse the parameter types of a function in multiple places.
 
-## `Awaited<Type>`
+### `Awaited<Type>`
 
 When you're working with asynchronous code in TypeScript, you often use `Promises` and `async/await`. But sometimes it’s tricky to figure out the actual type of a value returned from a `Promise`, especially when the `Promise` is nested or combined with other types. This is where the `Awaited<Type>` utility type comes in!
 
 `Awaited<Type>` helps you extract the final resolved value of a `Promise`, whether it's a simple `Promise`, a nested `Promise`, or even a combination of types (like unions). It's like simulating the behavior of `await` in an `async` function.
 
-### Why Use `Awaited<Type>`?
+#### Why Use `Awaited<Type>`?
 
 - `Awaited<Type>` helps you get the resolved type of a `Promise`. If it's nested (like `Promise<Promise<Type>>`), it unwraps all the layers and gives you the final type.
 
@@ -399,7 +399,7 @@ Let's explore this with some easy-to-understand examples.
   type C = Awaited<string | Promise<number>>; // C is string | number
 ```
 
-### Using `Awaited<Type>` with Async Functions
+#### Using `Awaited<Type>` with Async Functions
 
 In real-world scenarios, you'll often work with async functions that return `Promises`. `Awaited<Type>` can be used to extract the resolved type of a promise returned by an async function.
 
@@ -415,7 +415,7 @@ In real-world scenarios, you'll often work with async functions that return `Pro
   const data: FetchedDataType = "Data fetched";
 ```
 
-### Handling Nested Promises in Async Functions
+#### Handling Nested Promises in Async Functions
 
 You might also come across nested promises in your async functions. `Awaited` is perfect for unwrapping these promises, so you don’t have to worry about how many layers deep the promise goes.
 
