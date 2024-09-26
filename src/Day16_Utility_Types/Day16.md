@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 15](../Day15_Modules/Day15.md) | [Day 17 >>](../Day17_Utility_Types/Day17.md)
+[<< Day 15](../Day15_Modules/Day15.md) | [Day 17 >>](../Day17_Enums/Day17.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/Day_16.webp">
@@ -467,4 +467,4 @@ Even though `getNestedPromise` returns `Promise<Promise<number>>`, `Awaited` con
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 15](../Day15_Modules/Day15.md) | [Day 17 >>](../Day17_Utility_Types/Day17.md)
+[<< Day 15](../Day15_Modules/Day15.md) | [Day 17 >>](../Day17_Enums/Day17.md)

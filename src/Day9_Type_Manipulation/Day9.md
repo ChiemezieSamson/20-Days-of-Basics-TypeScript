@@ -29,7 +29,7 @@
   - [Index Signatures with `keyof`](#index-signatures-with-keyof)
 - [The `typeof` Operator](#the-typeof-operator)
   - [How it Works](#how-it-works)
-  - [Use Cases for TypeScript’s `typeof`](#use-cases-for-typescript-s-typeof)
+  - [Use Cases for TypeScript’s `typeof`](#use-cases-for-typescripts-typeof)
   - [Using `typeof` with Literal Types](#using-typeof-with-literal-types)
 - [Combining `typeof` with `keyof` for Object Keys](#combining-typeof-with-keyof-for-object-keys)
 - [Indexed Access Types](#indexed-access-types)

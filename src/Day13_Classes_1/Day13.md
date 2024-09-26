@@ -39,7 +39,7 @@
   - [Key Differences Between `extends` and `implements`](#key-differences-between-extends-and-implements)
 - [Overriding Methods](#overriding-methods)
   - [Example of Overriding](#example-of-overriding)
-- [Calling `super()` in Inheritance](#calling-super()-in-inheritance)
+- [Calling `super()` in Inheritance](#calling-super-in-inheritance)
   - [Calling `super` in the Constructor](#calling-super-in-the-constructor)
   - [Calling `super` in Methods](#calling-super-in-methods)
 - [💻 Day 13: Exercises](#-day-13-exercises)

@@ -25,7 +25,7 @@
 
 - [📔 Day 2](#-day-2)
 - [Types in TypeScript](#types-in-typescript)
-  - [Type Guards Using ```typeof```](#type-guards-using-typeof)
+  - [Type Guards Using `typeof`](#type-guards-using-typeof)
     - [Basics Exampless](#basics-examples)
 - [Type Annotations](#type-annotations)
 - [Type Assignment: Explicit and Implicit Type](#type-assignment-explicit-and-implicit-type)
