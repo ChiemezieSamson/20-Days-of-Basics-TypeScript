@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h1>30 Days of Basics TypeScript: Functions 1</h1>
+  <h1>20 Days of Basics TypeScript: Functions 1</h1>
 </div>
 
 <div align="center"> 

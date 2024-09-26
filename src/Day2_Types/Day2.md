@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h1>30 Days of Basics TypeScript: Types </h1>
+  <h1>20 Days of Basics TypeScript: Types </h1>
 </div>
 
 <div align="center"> 
@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 1](../Day1_Introduction/Day1.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)
+[<< Day 1](../Day1_TypeScript_Introduction/Day1.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/day_2.webp">
@@ -693,4 +693,4 @@ To avoid this error completly use literal inference only when any other methods 
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 1](../Day1_Introduction/Day1.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)
+[<< Day 1](../Day1_TypeScript_Introduction/Day1.md) | [Day 3 >>](../Day3_Array_Type/Day3.md)

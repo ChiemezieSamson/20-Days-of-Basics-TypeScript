@@ -1,25 +1,5 @@
-# 20 Days of Basics TypeScript
-
-|       # Day       |                               Topics                                 |
-|:-----------------:| :------------------------------------------------------------------: |
-|         01        |                      [Introduction](./Day1.md)                       |
-|         02        |            [Types in TypeScript](../Day2_Types/Day2.md)              |
-|         03        |         [Arrays in TypeScript](../Day3_Array_Type/Day3.md)           |
-|         04        |         [Tuple Types in TypeScript](../Day4_Tuple/Day4.md)           |
-|         05        |        [Object Types in TypeScript](../Day5_Objects/Day5.md)         |
-|         06        |       [Functions in TypeScript 1](../Day6_Functions_1/Day6.md)       |
-|         07        |       [Functions in TypeScript 2](../Day7_Functions_2/Day7.md)       |
-|         08        |         [Narrowing in TypeScript](../Day8_Narrowing/Day8.md)         |
-|         09        |        [Type Manipulation](../Day9_Type_Manipulation/Day9.md)        |
-|         10        |      [Conditional Types](../Day10_Conditional_Types/Day10.md)        |
-|         11        |            [Mapped Types](../Day11_Mapped_Types/Day11.md)            |
-|         12        |  [Template Literal Types](../Day12_Template_Literal_Types/Day12.md)  |
-|         13        |                [Classes 1](../Day13_Classes_1/Day13.md)              |
-|         14        |                [Classes 2](../Day14_Classes_2/Day14.md)              |
-|         15        |                  [Modules](../Day15_Modules/Day15.md)                |
-
 <div align="center"> 
-  <h1>20 Days of Basics TypeScript: Introduction </h1>
+  <h1>20 Days of Basics TypeScript: Getting Started</h1>
 </div>
 
 <div align="center"> 
@@ -33,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[Day 2 >>](../Day2_Types/Day2.md)
+[<< Day 0](../../README.md) | [Day 2 >>](../Day2_Types/Day2.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/day_1.webp">
@@ -43,9 +23,8 @@
 
 ## Table of Contents
 
-- [30 Days of Basics TypeScript](#30-days-of-basics-typescript)
 - [📔 Day 1](#-day-1)
-- [Introduction](#introduction)
+- [TypeScript Introduction](#typescript-introduction)
   - [Key Features of TypeScript](#key-features-of-typescript)
   - [Prerequisites](#prerequisites)
 - [Installing TypeScript](#installing-typescript)
@@ -75,9 +54,7 @@
   
 # 📔 Day 1
 
-Hello, I'm Samson Nebeolisa. In this course, I'll be guiding you through the fundamentals of TypeScript, helping you build a strong foundation in this powerful programming language. If you need any help or want to support others, feel free to join our [telegram group](https://t.me/+RJdqfTtxbGIzYWY1).
-
-## Introduction
+## TypeScript Introduction
 
 TypeScript was created by Microsoft, led by Anders Hejlsberg, who also created C#. It’s like an upgraded version of JavaScript that adds extra features to help you catch mistakes early and write cleaner code, especially in big projects.
 
@@ -104,13 +81,19 @@ console.log(addNumbers(5, "10"));  // Error: Argument of type 'string' is not as
 
 ### Prerequisites
 
-Before we start this course, it’s important to have a good understanding of JavaScript. We won’t cover the basics of JavaScript in detail here, so make sure you’re comfortable with:
+Before we start this course, it’s important to have a good understanding of JavaScript. We won't be diving deeply into basic JavaScript concepts when discussing TypeScript, so make sure you’re comfortable with:
 
   * ES6 Features: Know how to use let and const, arrow functions, classes, modules, and template literals.
 
   * Functions and Closures: Understand how functions work in JavaScript and the concept of closures.
 
   * Asynchronous Programming: Be familiar with Promises, ```async/await```, and how the event loop works.
+
+  * Arrays and Objects: Be proficient with array methods (map, filter, reduce, etc.) and working with objects, including creating, updating, and looping through them.
+
+  * Basic DOM Manipulation: Know how to select and modify HTML elements, handle events (like clicks), and manipulate styles using JavaScript.
+
+Having a strong foundation in these JavaScript concepts will ensure that you get the most out of this TypeScript course and can seamlessly integrate what you learn into real-world projects.
 
 ## Installing TypeScript
 
@@ -562,4 +545,4 @@ TypeScript also offers strictness flags to make your code safer and catch more e
 
 🎉 CONGRATULATIONS ! 🎉
 
-[Day 2 >>](../Day2_Types/Day2.md)
+[<< Day 0](../../README.md) | [Day 2 >>](../Day2_Types/Day2.md)
