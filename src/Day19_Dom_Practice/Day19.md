@@ -64,6 +64,8 @@ Website example:
 ### Project CSS 
 
 ```Css
+  /* Index.css */
+
   :root {
     --gap: 1em;
     --columns: 4;
@@ -113,6 +115,7 @@ Website example:
 ### TypeScript Code
 
 ```ts
+  // Script.ts
   // Define the types for the image data array
   interface ImageData {
     id: string;    // Ensure 'id' is a string type
@@ -166,6 +169,7 @@ Website example:
 TypeScript only coding
 
  ```ts
+  // Script.ts
   // Creating a new div element
   const newDiv: HTMLDivElement = document.createElement("div");
   newDiv.setAttribute("class", "keyboard");
