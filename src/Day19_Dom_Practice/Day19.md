@@ -240,3 +240,28 @@ TypeScript only coding
     displayScreen.style.marginLeft = "90px";
   }
 ```
+
+🌟 Awesome job! You’ve successfully completed your Day 19, and you're well on your way to becoming a great developer. Keep up the momentum! Now, let's keep your mind sharp and your body active with some quick exercises.
+
+## 💻 Day 19: Exercises
+
+### Exercise: Level 1
+
+1.
+
+![Exercise 1](../Asset/images/exercise_1.gif)
+
+### Exercise: Level 2
+2.
+
+![restCountries](../Asset/images/all_country.png)
+
+### Exercise: Level 3
+
+3. Display just one of the country as below:
+
+![restCountries_one](../Asset/images/One_country.png)
+
+🎉 CONGRATULATIONS ! 🎉
+
+[<< Day 17](../Day18_DOM_Manipulation/Day18.md) | [Day 20 >>](../Day20_Final_Projects/Day20.md)
