@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 16](../Day16_Utility_Types/Day16.md) | [Day 18 >>](../Day18_DOM/Day18.md)
+[<< Day 16](../Day16_Utility_Types/Day16.md) | [Day 18 >>](../Day18_DOM_Manipulation/Day18.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/Day_17.webp">
@@ -413,4 +413,4 @@ String enums make it clear what role each user has, and you don’t need to worr
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 16](../Day16_Utility_Types/Day16.md) | [Day 18 >>](../Day18_DOM/Day18.md)
+[<< Day 16](../Day16_Utility_Types/Day16.md) | [Day 18 >>](../Day18_DOM_Manipulation/Day18.md)
