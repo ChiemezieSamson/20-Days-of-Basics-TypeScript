@@ -13,7 +13,6 @@
   <small>Sep, 2024</small>
 </div>
 
-<div align="center"> 
 
 |       # Day       |                               Topics                                    |
 |:-----------------:| :----------------------------------------------------------------------:|
@@ -39,7 +38,6 @@
 |         19        |           [DOM Practice](./src/Day19_Dom_Practice/Day19.md)             |
 |         20        |         [Final Projects](./src/Day20_Final_Projects/Day20.md)           |
 
-</div>
 
 
 [Day 1 >>](./src/Day1_TypeScript_Introduction/Day1.md)
