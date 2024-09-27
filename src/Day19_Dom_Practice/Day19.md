@@ -13,7 +13,7 @@
   <small>Sep, 2024</small>
 </div>
 
-[<< Day 17](../Day18_DOM_Manipulation/Day18.md) | [Day 20 >>](../Day20_Final_Projects/Day20.md)
+[<< Day 18](../Day18_DOM_Manipulation/Day18.md) | [Day 20 >>](../Day20_Final_Project/Day20.md)
 
 <div align="center"> 
   <a class="header-image" target="_blank" href="../Asset/images/Days/Day_19.webp">
@@ -268,4 +268,4 @@ TypeScript only coding
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 17](../Day18_DOM_Manipulation/Day18.md) | [Day 20 >>](../Day20_Final_Projects/Day20.md)
+[<< Day 18](../Day18_DOM_Manipulation/Day18.md) | [Day 20 >>](../Day20_Final_Project/Day20.md)

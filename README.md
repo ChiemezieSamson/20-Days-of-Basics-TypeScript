@@ -36,7 +36,7 @@
 |         17        |                   [Enums](./src/Day17_Enums/Day17.md)                   |
 |         18        |       [DOM Manipulation](./src/Day18_DOM_Manipulation/Day18.md)         |
 |         19        |           [DOM Practice](./src/Day19_Dom_Practice/Day19.md)             |
-|         20        |         [Final Projects](./src/Day20_Final_Projects/Day20.md)           |
+|         20        |         [Final Projects](./src/Day20_Final_Project/Day20.md)            |
 
 
 
