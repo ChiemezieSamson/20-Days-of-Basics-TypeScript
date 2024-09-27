@@ -11,6 +11,13 @@
  📰 About Me [Portfolio](https://www.nebe-samson.com/)
  <br/>
   <small>Sep, 2024</small>
+
+  <p>
+    <small>Support the <strong>author</strong> to create more educational materials</small>
+     <br/>
+     
+  [![PayPal](https://img.shields.io/badge/PayPal-00457C?logo=paypal&logoColor=white)](https://paypal.me/ChiemezieSamson?country.x=KR&locale.x=en_US)
+  </p>
 </div>
 
 [<< Day 8](../Day8_Narrowing/Day8.md) | [Day 10 >>](../Day10_Conditional_Types/Day10.md)

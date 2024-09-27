@@ -11,6 +11,13 @@
  📰 About Me [Portfolio](https://www.nebe-samson.com/)
  <br/>
   <small>Sep, 2024</small>
+
+  <p>
+    <small>Support the <strong>author</strong> to create more educational materials</small>
+     <br/>
+     
+  [![PayPal](https://img.shields.io/badge/PayPal-00457C?logo=paypal&logoColor=white)](https://paypal.me/ChiemezieSamson?country.x=KR&locale.x=en_US)
+  </p>
 </div>
 
 
@@ -61,7 +68,6 @@
 
 ## Introduction
 
-
 ### Self Introduction
 
 Hello and welcome to this TypeScript course! My name is Samson Nebeolisa, and I’m a frontend developer with several years of experience building web applications using modern JavaScript frameworks like React. Throughout my career, I’ve found JavaScript to be an incredible tool for web development. However, as the ecosystem evolves, TypeScript is quickly becoming a game-changer in the industry.
@@ -72,8 +78,10 @@ Beyond that, TypeScript has proven itself in areas like code quality, maintainab
 
 My goal with this course is to guide you through understanding and effectively using TypeScript in your projects. Whether you're completely new to TypeScript or looking to deepen your knowledge, this course will equip you with the skills to confidently write better, more maintainable, and scalable code.
 
-Feel free to join our: 
-[telegram group](https://t.me/+RJdqfTtxbGIzYWY1).
+Feel free to join the group chat: 
+
+[![Telegram](https://img.shields.io/badge/Telegram-%230077B5.svg?logo=telegram&logoColor=white)](https://t.me/+RJdqfTtxbGIzYWY1).
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/aSJ6c7Cq)
 
 ### Course Introduction
 
