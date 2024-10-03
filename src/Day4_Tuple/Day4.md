@@ -38,7 +38,7 @@
   - [Tuples in Functions](#tuples-in-functions)
   - [Tuples with Rest Elements](#tuples-with-rest-elements)
   - [Tuple with Rest Element in Function Parameters](#tuple-with-rest-element-in-function-parameters)
-  - [Using TypeScript's Tuples and Interfaces](#using-typeScript's-tuples-and-interfaces)
+  - [Using TypeScript's Tuples and Interfaces](#using-typeScripts-tuples-and-interfaces)
   - [Readonly Tuples](#readonly-tuples)
   - [Real-World Use Case: HTTP Response Tuple](#real-world-use-case-http-response-tuple)
   - [When to Use Tuples vs. Arrays](#when-to-use-tuples-vs-arrays)
