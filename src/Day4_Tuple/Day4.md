@@ -38,6 +38,7 @@
   - [Tuples in Functions](#tuples-in-functions)
   - [Tuples with Rest Elements](#tuples-with-rest-elements)
   - [Tuple with Rest Element in Function Parameters](#tuple-with-rest-element-in-function-parameters)
+  - [Using TypeScript's Tuples and Interfaces](#using-typeScript's-tuples-and-interfaces)
   - [Readonly Tuples](#readonly-tuples)
   - [Real-World Use Case: HTTP Response Tuple](#real-world-use-case-http-response-tuple)
   - [When to Use Tuples vs. Arrays](#when-to-use-tuples-vs-arrays)
@@ -234,6 +235,35 @@ Rest elements are particularly useful when passing tuples to functions. They all
     // ...
   }
 ```
+
+### Using TypeScript's Tuples and Interfaces
+
+You can combine tuples and an interface to name the elements of a tuple-like structure. However, TypeScript tuples can only be accessed by index, so you need to create an interface to give names to the elements.
+
+```ts
+  // Define an interface for named properties
+  interface Location {
+    lat: number;
+    long: number;
+  }
+
+  // Define the tuple type
+  type LocationTuple = [number, number];
+
+  // Combine the tuple with named properties
+  const location: Location & LocationTuple = Object.assign([40.7144, -74.006], {
+    lat: 40.7144,
+    long: -74.006
+  });
+
+  // Access by index
+  console.log(location[0]); // 40.7144
+
+  // Access by name
+  console.log(location.lat); // 40.7144
+  console.log(location.long); // -74.006
+```
+
 
 ### Readonly Tuples
 
